@@ -29,23 +29,30 @@ button {
     margin: 0 auto;
 }
 header {
-    .logo {
+    a.logo {
         margin-top: 45px;
         float:left;
+        &:hover{
+          text-decoration: none;
+        }
+        h2,h4 {
+          -webkit-font-smoothing: antialiased;
+          font-weight: 300;
+
+        }
+
         h2 {
             font-size: 30px;
             letter-spacing: 6px;
-            font-weight: 300;
             line-height: 20px;
             color: #00a988;
-            -webkit-font-smoothing: antialiased;
+
         }
         h4 {
             font-size: 12px;
-            font-weight: 300;
             letter-spacing: 5px;
             color: #3f3f3f;
-            -webkit-font-smoothing: antialiased;
+
         }
     }
     .nav-categories {

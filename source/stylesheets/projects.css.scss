@@ -1,19 +1,54 @@
 #projects .container-small {
     height: 500px;
 }
+
+$transition-duration: 300ms;
+
+//això és una a(link)
 .square {
+    position: relative;
     width: 100%;
     height: 590px;
     margin-top: 40px;
     align-items: center;
     justify-content: space-around;
     display: flex;
+    background-color: rgba(0, 169, 136, 0.80);
+
+    &:hover {
+      transition: background-color $transition-duration linear;
+      text-decoration: none;
+      background-color: rgba(0, 169, 136, 0);
+    }
+
+    &:before {
+      background-color: inherit;
+      content: "";
+      top: 0; left: 0; right: 0; bottom: 0;
+      position: absolute;
+    }
+
+    &-mixed {
+        background-image: url("../img/mr-targetas-cuadrado.jpg");
+    }
+    &-artco {
+        background-image: url("../img/exterior-art-quadrat.jpg");
+    }
+    &-kiwi {
+        background-image: url("../img/muntatge-kiwi.png");
+    }
+    &-camaloon {
+        background-image: url("../img/escriptori-camaloon.jpg");
+    }
 }
 .content {
     text-align: center;
+    opacity: 1;
+    transition: opacity $transition-duration linear;
+    z-index: 1;
 }
 .square:hover .content {
-    display: none;
+    opacity: 0;
 }
 .content h4 {
     font-size: 20px;
@@ -25,28 +60,4 @@
     font-style: italic;
     color: white;
     font-size: 18px;
-}
-.square-mixed {
-    background: linear-gradient(rgba(0, 169, 136, 0.80), rgba(0, 169, 136, 0.80)), url("../img/mr-targetas-cuadrado.jpg");
-}
-.square-mixed:hover {
-    background: url("../img/mr-targetas-cuadrado.jpg");
-}
-.square-artco {
-    background: linear-gradient(rgba(0, 169, 136, 0.80), rgba(0, 169, 136, 0.80)), url("../img/exterior-art-quadrat.jpg");
-}
-.square-artco:hover {
-    background: url("../img/exterior-art-quadrat.jpg");
-}
-.square-kiwi {
-    background: linear-gradient(rgba(0, 169, 136, 0.80), rgba(0, 169, 136, 0.80)), url("../img/muntatge-kiwi.png");
-}
-.square-kiwi:hover {
-    background: url("../img/muntatge-kiwi.png");
-}
-.square-camaloon {
-    background: linear-gradient(rgba(0, 169, 136, 0.80), rgba(0, 169, 136, 0.80)), url("../img/escriptori-camaloon.jpg");
-}
-.square-camaloon:hover {
-    background: url("../img/escriptori-camaloon.jpg");
 }
