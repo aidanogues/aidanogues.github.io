@@ -30,8 +30,9 @@ button {
 }
 header {
     a.logo {
-        margin-top: 45px;
+        margin-top: 40px;
         float:left;
+        display: block;
         &:hover{
           text-decoration: none;
         }
@@ -85,15 +86,17 @@ header {
         }
     }
     @media(max-width:750px){
-      .logo{
+      a.logo{
         float:none;
-        text-align: center;
+        text-align:center;
       }
       .nav-categories{
         float:none;
         text-align: center;
         margin-top: 30px;
-        font-size: 18px;
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 10px;
       }
     }
 }
@@ -102,6 +105,12 @@ footer {
     margin-top: 100px;
     margin-bottom: 20px;
 }
+  @media(max-width:750px){
+    footer {
+      margin-top: 50px;
+    }
+  }
+
 footer i {
     color: #e3a800;
 }

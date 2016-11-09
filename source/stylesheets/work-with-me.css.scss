@@ -6,6 +6,13 @@
   margin-top:80px;
   line-height: 40px;
 }
+  @media(max-width:750px){
+    #work-with-me h3 {
+      font-size: 26px;
+      line-height: 30px;
+      margin-top: 30px;
+  }
+}
 
 .container-small h3 {
   margin-bottom: 40px;
@@ -14,4 +21,10 @@
 .text-center h5 {
   color:#3f3f3f;
   font-size: 15px;
+}
+@media(max-width:750px){
+  .text-center h5 {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
