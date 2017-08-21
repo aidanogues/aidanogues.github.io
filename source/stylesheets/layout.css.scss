@@ -1,124 +1,140 @@
 body {
-    font-family: "Futura", sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Futura", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
+
 ::-webkit-input-placeholder {
-    -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 }
+
 input,
 textarea {
-    width: 50%;
-    display: block;
-    margin-bottom: 15px;
-    border: 1px solid #e3a800;
-    padding: 4px 8px;
+  width: 50%;
+  display: block;
+  margin-bottom: 15px;
+  border: 1px solid #e3a800;
+  padding: 4px 8px;
 }
+
 textarea {
-    width: 100%;
+  width: 100%;
 }
+
 button {
-    background-color: #00a988;
-    border: none;
-    color: white;
-    -webkit-font-smoothing: antialiased;
-    padding: 10px 16px;
-    margin-bottom: 20px;
+  background-color: #00a988;
+  border: none;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  padding: 10px 16px;
+  margin-bottom: 20px;
 }
+
 .container-small {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
+
 header {
-    a.logo {
-        margin-top: 40px;
-        float:left;
-        display: block;
-        &:hover{
-          text-decoration: none;
-        }
-        h2,h4 {
-          -webkit-font-smoothing: antialiased;
-          font-weight: 300;
+  a.logo {
+    margin-top: 40px;
+    float: left;
+    display: block;
 
-        }
-
-        h2 {
-            font-size: 30px;
-            letter-spacing: 6px;
-            line-height: 20px;
-            color: #00a988;
-
-        }
-        h4 {
-            font-size: 12px;
-            letter-spacing: 5px;
-            color: #3f3f3f;
-
-        }
+    &:hover {
+      text-decoration: none;
     }
-    .nav-categories {
-        list-style-type: none;
-        overflow: hidden;
-        font-size: 12px;
-        letter-spacing: 4px;
-        line-height: 0;
-        color: #3f3f3f;
-        margin-top: 75px;
-        padding: 0;
-        float:right;
-        li {
-            display: inline-block;
-        }
-        li a {
-            display: block;
-        }
-        a {
-            color: #3f3f3f;
-            text-decoration: none;
-            margin: 10px;
-            padding: 0;
-        }
-        .active,
-        a:active,
-        a:hover {
-            color: #e3a800;
-            text-decoration: underline;
-        }
+
+    h2,
+    h4 {
+      -webkit-font-smoothing: antialiased;
+      font-weight: 300;
     }
-    @media(max-width:750px){
-      a.logo{
-        float:none;
-        text-align:center;
-      }
-      .nav-categories{
-        float:none;
-        text-align: center;
-        margin-top: 30px;
-        font-size: 14px;
-        letter-spacing: 1px;
-        line-height: 10px;
-      }
+
+    h2 {
+      font-size: 30px;
+      letter-spacing: 6px;
+      line-height: 20px;
+      color: #00a988;
     }
-}
-footer {
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 20px;
-}
-  @media(max-width:750px){
-    footer {
-      margin-top: 50px;
+
+    h4 {
+      font-size: 12px;
+      letter-spacing: 5px;
+      color: #3f3f3f;
     }
   }
 
-footer i {
-    color: #e3a800;
-}
-footer.container h4 {
-    color: #e3a800;
+  .nav-categories {
+    list-style-type: none;
+    overflow: hidden;
     font-size: 12px;
-    font-weight: 300;
+    letter-spacing: 4px;
+    line-height: 0;
+    color: #3f3f3f;
+    margin-top: 75px;
+    padding: 0;
+    float: right;
+
+    li {
+      display: inline-block;
+    }
+
+    li a {
+      display: block;
+    }
+
+    a {
+      color: #3f3f3f;
+      text-decoration: none;
+      margin: 10px;
+      padding: 0;
+    }
+
+    .active,
+    a:active,
+    a:hover {
+      color: #e3a800;
+      text-decoration: underline;
+    }
+  }
+  @media(max-width:750px) {
+    a.logo {
+      float: none;
+      text-align: center;
+    }
+
+    .nav-categories {
+      float: none;
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      letter-spacing: 1px;
+      line-height: 10px;
+    }
+  }
 }
+
+footer {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+@media(max-width:750px) {
+  footer {
+    margin-top: 50px;
+  }
+}
+
+footer i {
+  color: #e3a800;
+}
+
+footer.container h4 {
+  color: #e3a800;
+  font-size: 12px;
+  font-weight: 300;
+}
+
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
