@@ -2,15 +2,15 @@
   font-family: Georgia;
   -webkit-font-smoothing: antialiased;
   font-size: 32px;
-  color:#00a988;
-  margin-top:80px;
+  color: #00a988;
+  margin-top: 80px;
   line-height: 40px;
 }
-  @media(max-width:750px){
-    #work-with-me h3 {
-      font-size: 26px;
-      line-height: 30px;
-      margin-top: 30px;
+@media(max-width:750px) {
+  #work-with-me h3 {
+    font-size: 26px;
+    line-height: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -19,10 +19,11 @@
 }
 
 .text-center h5 {
-  color:#3f3f3f;
-  font-size: 15px;
+  color: #3f3f3f;
+  font-size: 20px;
+  line-height: 30px;
 }
-@media(max-width:750px){
+@media(max-width:750px) {
   .text-center h5 {
     font-size: 14px;
     line-height: 18px;
