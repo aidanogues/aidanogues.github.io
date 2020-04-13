@@ -8,6 +8,7 @@
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+page '/projects/*', layout: "project"
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
@@ -31,6 +32,18 @@ end
 helpers do
   def link_to_page(title, url, opts = {})
     link_to title, url, class: "#{opts[:className]} #{"text-sky underline" if url == "/" + current_path}"
+  end
+
+  def project_keys
+    %w(gather dancemedia mixed childline kiwi camaloon)
+  end
+
+  def project_key
+    File.basename(current_path, ".*")
+  end
+
+  def next_project_path(inc=1)
+    "/projects/#{project_keys[project_keys.index(project_key)+inc] || project_keys.first}.html"
   end
 end
 

@@ -1,0 +1,27 @@
+<% wrap_layout :layout do %> <%= yield %>
+<div class="container mx-auto px-4 my-16">
+  <div
+    class="flex flex-col md:flex-row text-center justify-between items-center font-futura"
+  >
+    <a href="<%= next_project_path(-1) %>" class="hover:underline hover:text-sky text-right tracking-widest mb-6">
+      <i class="fa fa-arrow-left"></i> PREVIOUS PROJECT
+    </a>
+    <div class="order-first md:order-none flex flex-col items-center mb-12">
+      <div class="mb-8 text-2xl">
+        Would you like to start your project?
+      </div>
+      <div>
+        <a
+          class="inline-block bg-sky text-white px-16 py-4 "
+          href="/work-with-me.html"
+        >
+          Let's talk
+        </a>
+      </div>
+    </div>
+    <a href="<%= next_project_path %>" class="hover:underline hover:text-sky text-right tracking-widest">
+      NEXT PROJECT <i class="fa fa-arrow-right"></i>
+    </a>
+  </div>
+</div>
+<% end %>
