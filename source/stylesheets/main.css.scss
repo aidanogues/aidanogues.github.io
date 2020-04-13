@@ -1,5 +1,31 @@
-@import "layout.css";
-@import "projects.css";
-@import "work-with-me.css";
-@import "about.css";
-@import "projects-base.css";
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-futura {
+  font-family: "Futura";
+}
+
+.font-georgia {
+  font-family: "Georgia";
+}
+
+.tracking-extra-wide {
+  letter-spacing: 0.17em;
+}
+
+.pb-full {
+  padding-bottom: 100%;
+}
+
+.text-sky {
+  color: rgb(16,163,224)
+}
+
+.bg-sky {
+  background-color: rgb(16,163,224)
+}
+
+.bg-sky-80 {
+  background-color: rgba(16,163,224, 0.8)
+}

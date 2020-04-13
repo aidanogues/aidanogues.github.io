@@ -29,8 +29,8 @@ end
 
 # Methods defined in the helpers block are available in templates
 helpers do
-  def link_to_page(title, url)
-    link_to title, url, class:("active" if url == "/" + current_path)
+  def link_to_page(title, url, opts = {})
+    link_to title, url, class: "#{opts[:className]} #{"text-sky underline" if url == "/" + current_path}"
   end
 end
 
