@@ -24,6 +24,12 @@ configure :development do
   activate :livereload
 end
 
+activate :external_pipeline,
+  name: :webpack,
+  command: build? ? 'NODE_ENV=production npx webpack --bail --mode production' : 'NODE_ENV=development npx webpack --mode development -d --watch --color',
+  source: ".tmp/dist",
+  latency: 1
+
 ###
 # Helpers
 ###
@@ -49,12 +55,7 @@ end
 
 # Build-specific configuration
 configure :build do
-  # Minify CSS on build
-  activate :minify_css
   activate :asset_hash
-
-  # Minify Javascript on build
-  activate :minify_javascript
 end
 
 activate :deploy do |deploy|

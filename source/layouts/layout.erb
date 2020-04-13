@@ -5,15 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title><%= current_page.data.title || "Aida Nogués" %></title>
-    <%= stylesheet_link_tag :main %>
-    <link
-      href="https://unpkg.com/tailwindcss@^1.2/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+    <%= stylesheet_link_tag :styles %>
     <script src="https://use.fontawesome.com/a55f26c8ff.js"></script>
   </head>
 
-  <body class="font-georgia">
+  <body>
     <header class="my-12 md:my-16">
       <div
         class="container px-4 mx-auto flex flex-col md:flex-row font-futura items-center"
