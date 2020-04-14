@@ -11,7 +11,7 @@ module.exports = {
       spacing: {
         "full": "100%"
       },
-      tracking: {
+      letterSpacing: {
         "extra-wide": "0.17em"
       }
     },
